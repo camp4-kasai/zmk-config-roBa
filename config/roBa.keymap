@@ -82,6 +82,7 @@
             compatible = "zmk,behavior-sensor-rotate-var";
             #sensor-binding-cells = <2>;
             bindings = <&msc>, <&msc>;
+
             tap-ms = <10>;
         };
     };
@@ -108,7 +109,7 @@
 &trans       &trans        &trans                &trans                  &trans             &trans      &kp DELETE  &trans                                                        &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp LEFT RIGHT>;
+            sensor-bindings = <&scroll_up_down>;
         };
 
         NUM {
@@ -135,10 +136,10 @@
 
         FEATURE {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                           &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
-&trans  &trans  &trans  &trans  &trans  &trans      &bootloader  &trans        &trans        &trans        &trans        &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &sys_reset   &trans        &trans        &trans        &trans        &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans       &trans                                                  &trans
+&trans  &trans  &trans  &trans  &trans                               &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
+&trans  &trans  &trans  &trans  &trans  &sys_reset      &bootloader  &trans        &trans        &trans        &trans        &trans
+&trans  &trans  &trans  &trans  &trans  &trans          &trans       &trans        &trans        &trans        &trans        &trans
+&trans  &trans  &trans  &trans  &trans  &trans          &trans       &trans                                                  &trans
             >;
         };
 
