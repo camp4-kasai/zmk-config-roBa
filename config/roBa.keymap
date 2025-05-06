@@ -77,6 +77,13 @@
 
             tap-ms = <20>;
         };
+
+        mouse_scrl: mouse_wheel_scrl {
+            compatible = "zmk,behavior-sensor-rotate-var";
+            #sensor-binding-cells = <2>;
+            bindings = <&msc>, <&msc>;
+            tap-ms = <10>;
+        };
     };
 
     keymap {
@@ -90,7 +97,7 @@
 &lt 3 LANG2  &kp LEFT_WIN  &kp ESCAPE        &kp LEFT_ALT        &lt 1 SPACE  &lt 2 TAB          &lt 2 BACKSPACE  &lt 1 ENTER                                                     &lt 3 LANG1
             >;
 
-            sensor-bindings = <&scroll_up_down>;
+            sensor-bindings = <&mouse_scrl>;
         };
 
         SYMBOL_ARROW {
