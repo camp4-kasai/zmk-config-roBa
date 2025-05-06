@@ -97,7 +97,7 @@
 &lt 3 LANG2  &kp LEFT_WIN  &kp ESCAPE        &kp LEFT_ALT        &lt 1 SPACE  &lt 2 TAB          &lt 2 BACKSPACE  &lt 1 ENTER                                                     &lt 3 LANG1
             >;
 
-            sensor-bindings = <&mouse_scrl>;
+            sensor-bindings = <&mouse_scrl SCRL_UP SCRL_DOWN>;
         };
 
         SYMBOL_ARROW {
