@@ -117,10 +117,10 @@
 
         FUNCTION {
             bindings = <
-&kp F1  &kp F2  &kp F3          &kp F4            &kp F5                      &kp F6  &kp F7             &kp F8           &kp F9   &kp F10
-&trans  &trans  &kp LEFT_SHIFT  &kp LEFT_CONTROL  &trans  &trans      &trans  &trans  &kp RIGHT_CONTROL  &kp RIGHT_SHIFT  &kp F11  &kp F12
-&trans  &trans  &trans          &trans            &trans  &trans      &trans  &trans  &trans             &trans           &trans   &trans
-&trans  &trans  &trans          &trans            &trans  &trans      &trans  &trans                                               &trans
+&kp F1  &kp F2   &kp F3             &kp F4               &trans                                  &trans  &trans  &trans  &trans  &trans
+&kp F5  &kp F6   &mt LEFT_SHIFT F7  &mt LEFT_CONTROL F8  &trans  &kp K_MUTE              &trans  &trans  &trans  &trans  &trans  &trans
+&kp F9  &kp F10  &kp F11            &kp F12              &trans  &kp LC(LA(DELETE))      &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans   &trans             &trans               &trans  &trans                  &trans  &trans                          &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
